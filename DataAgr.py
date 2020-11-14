@@ -32,6 +32,13 @@ def aggrStats(news_outlets):
     print(''.join(tog))
     print("Total Articles:", total)
 
+def printHead(news_outlet):
+    for no in news_outlet:
+        for article in no.articles[:5]:   
+            article.clean_text()  
+            print(article.rawPrint())
+            # print(article.tagPrint())
+
 def main():
     # Test Data : res/test_data.json
     # All Site  : res/sites.json
@@ -45,9 +52,7 @@ def main():
         news_outlet.append(Outlet(ws, date_stamp))
     aggrStats(news_outlet)
     cleanDirectory('res/articles/')
-
-    for no in news_outlet:
-        print(no.printArticles())    
+    printHead(news_outlet)
 
 if __name__ == "__main__":
     main()
