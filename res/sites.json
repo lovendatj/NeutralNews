@@ -1,0 +1,29 @@
+{
+    "content-type":"application/json",
+    "sites":[
+        {
+            "name":"The Diamondback",
+            "url": "https://dbknews.com/",
+            "target_sub": [],
+            "parser": {
+                "type":"sitemap",                
+                "sitemap":{
+                    "type": "loc",
+                    "sitemap_url": "https://dbknews.com/sitemap.xml"
+                }
+            }
+        },
+        {
+            "name":"USA Today",
+            "url": "https://www.usatoday.com",
+            "target_sub":["news"],
+            "parser":{
+                "type":"sitemap",
+                "sitemap":{
+                    "@type": "loc",
+                    "sitemap_url": "https://www.usatoday.com/news-sitemap.xml"
+                }
+            }
+        }
+    ]
+}
