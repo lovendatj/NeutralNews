@@ -1,0 +1,61 @@
+{
+    "app":"NeutralNews",
+    "repo":"https://github.com/lovendatj/NeutralNews",
+    "author":"John Murray",
+    "target-cites":[
+        {
+            "name":"CNN",
+            "category":"Left",
+            "parse-type":{
+                "type":"XML",
+                "schema":"http://www.sitemaps.org/schemas/sitemap/0.9",
+                "url":"https://www.cnn.com/sitemaps/cnn/news.xml"
+            }
+        },
+        {
+            "name":"Fox News",
+            "category":"Right",
+            "parse-type":{
+                "type":"XML",
+                "schema":"http://www.sitemaps.org/schemas/sitemap/0.9",
+                "url":"https://www.foxnews.com/sitemap.xml?type=news"
+            }
+        },
+        {
+            "name":"USA Today",
+            "catgeory":"Neutral",
+            "parse-type":{
+                "type":"XML",
+                "schema":"http://www.sitemaps.org/schemas/sitemap/0.9",
+                "url":"https://www.usatoday.com/news-sitemap.xml"
+            }
+        },
+        {
+            "name":"The Wall Street Journal",
+            "catgeory":"Neutral",
+            "parse-type":{
+                "type":"XML",
+                "schema":"http://www.sitemaps.org/schemas/sitemap/0.9",
+                "url":"https://www.wsj.com/live_news_sitemap.xml"
+            }
+        },
+        {
+            "name":"MSNBC",
+            "catgeory":"Left",
+            "parse-type":{
+                "type":"XML",
+                "schema":"http://www.sitemaps.org/schemas/sitemap/0.9",
+                "url":"https://www.msnbc.com/sitemap/msnbc/sitemap-news"
+            }
+        },
+        {
+            "name":"National Review",
+            "catgeory":"Right",
+            "parse-type":{
+                "type":"XML",
+                "schema":"http://www.sitemaps.org/schemas/sitemap/0.9",
+                "url":"https://www.nationalreview.com/news-sitemap.xml"
+            }
+        }
+    ]
+}
